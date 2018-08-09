@@ -2,14 +2,10 @@ import neat
 import pickle
 import gym, ppaquette_gym_super_mario
 
-RIGHT_ONLY = [
-    [0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 1, 0, 0],
-    [0, 0, 0, 1, 1, 0],
-    [0, 0, 0, 1, 0, 1],
-    [0, 0, 0, 1, 1, 1],
-]
-
+ACTIONS = [
+            [0, 0, 0, 1, 0, 1],
+            [0, 0, 0, 1, 1, 1],
+        ]
 
 def main():
     config = neat.Config(
@@ -28,7 +24,8 @@ def main():
     while not done:
         state = state.reshape(208)
         output = net.activate(state)
-        s, reward, done, info = env.step(ACTIONS[output.index(max(output))])
+        ind = output.index(max(output))
+        s, reward, done, info = env.step(ACTIONS[ind])
         state = s
     print(info)
 

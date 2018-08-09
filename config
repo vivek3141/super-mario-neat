@@ -1,25 +1,26 @@
 [NEAT]
-fitness_criterion     = max
-fitness_threshold     = 3226
-pop_size              = 20
-reset_on_extinction   = False
+fitness_criterion      = max
+fitness_threshold      = 3266
+no_fitness_termination = False
+pop_size               = 10
+reset_on_extinction    = 0
 
 [DefaultGenome]
 # node activation options
-activation_default      = relu
+activation_default      = sigmoid
 activation_mutate_rate  = 0.025
-activation_options      = relu
+activation_options      = sigmoid
 
 # node aggregation options
 aggregation_default     = sum
-aggregation_mutate_rate = 0.0
-aggregation_options     = sum
+aggregation_mutate_rate = 0.025
+aggregation_options     = max
 
 # node bias options
-bias_init_mean          = 0.0
+bias_init_mean          = 0.01
 bias_init_stdev         = 1.0
-bias_max_value          = 30.0
-bias_min_value          = -30.0
+bias_max_value          = 100
+bias_min_value          = -100.0
 bias_mutate_power       = 0.5
 bias_mutate_rate        = 0.7
 bias_replace_rate       = 0.1
@@ -44,15 +45,15 @@ node_add_prob           = 0.2
 node_delete_prob        = 0.2
 
 # network parameters
-num_hidden              = 10
+num_hidden              = 50
 num_inputs              = 208
-num_outputs             = 1
+num_outputs             = 2
 
 # node response options
 response_init_mean      = 1.0
 response_init_stdev     = 0.0
-response_max_value      = 30.0
-response_min_value      = -30.0
+response_max_value      = 100.0
+response_min_value      = -100.0
 response_mutate_power   = 0.0
 response_mutate_rate    = 0.0
 response_replace_rate   = 0.0
@@ -60,8 +61,8 @@ response_replace_rate   = 0.0
 # connection weight options
 weight_init_mean        = 0.0
 weight_init_stdev       = 1.0
-weight_max_value        = 30
-weight_min_value        = -30
+weight_max_value        = 100
+weight_min_value        = -100
 weight_mutate_power     = 0.5
 weight_mutate_rate      = 0.8
 weight_replace_rate     = 0.1
