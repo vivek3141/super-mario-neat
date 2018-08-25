@@ -1,2 +1,3 @@
-# super-mario-neat
-This program evolves an AI using the NEAT algorithm to play Super Mario Bros.
+# Super Mario NEAT
+This program uses the NEAT algorithm to evolve a 
+Neural Network to play the original Super Mario Bros.
