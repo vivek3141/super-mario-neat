@@ -21,7 +21,7 @@ def main(config_file):
                          neat.DefaultSpeciesSet, neat.DefaultStagnation,
                          config_file)
     genome = pickle.load(open('finisher.pkl', 'rb'))
-    env = gym.make('ppaquette/SuperMarioBros-1-1-Tiles-v0')
+    env = gym.make('ppaquette/SuperMarioBros-2-1-Tiles-v0')
     net = neat.nn.FeedForwardNetwork.create(genome, config)
     info = {'distance': 0}
     while info['distance'] != 3252:
