@@ -49,3 +49,6 @@ The default level is World 1, Level 1. This can be changed by specifying `level=
 ## Result
 The `finisher.pkl` file is trained to complete 1-1. It can complete it around 50% of the time. The `run.py` file keeps running the
 simulation until it completes the level. `Ctrl + C` will stop it.
+<br>
+![alt Playing the level](https://github.com/vivek3141/super-mario-neat/tree/master/Documentation/world1-1.gif)
+<br>
