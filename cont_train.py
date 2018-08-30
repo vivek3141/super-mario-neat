@@ -11,8 +11,8 @@ gym.logger.set_level(40)
 
 
 class Train(train.Train):
-    def __init__(self, generations, file_name, parallel):
-        super().__init__(generations, parallel)
+    def __init__(self, generations, file_name, parallel, level):
+        super().__init__(generations, parallel, level)
         self.actions = [
             [0, 0, 0, 1, 0, 1],
             [0, 0, 0, 1, 1, 1],
