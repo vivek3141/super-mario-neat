@@ -7,11 +7,15 @@ For an in-depth explanation, watch [this video](https://www.youtube.com/watch?v=
 
 ## Requirements
 You can install the requirements by running <br >
-* `sudo requirements.sh`
+```bash 
+sudo requirements.sh
+```
 
 Or if on windows, run
-* `pip install -r requirements.txt`
-* Make sure you have fceux downloaded and added to PATH
+```bash
+pip install -r requirements.txt
+```
+* Make sure you have FCEUX downloaded and added to PATH
 
 ## Training
 The finisher.pkl file contains the best genome on generation 2284.
@@ -20,20 +24,26 @@ which is where I stopped training. <br />
 <br>
 You can continue training by running <br>
 <br>
-`python3 main.py cont_train gen=<num_generations> file=<file>`
+```bash
+python3 main.py cont_train gen=<num_generations> file=<file>
+```
 <br>
 
 ## Running
 To run the finisher.pkl file, run
 <br>
-`python3 main.py run`
-<br /><br>
+```bash
+python3 main.py run
+```
+
 or run <br>
-`python3 run.py`
-<br>
-<br>
+```bash
+python3 run.py
+```
 If you want to run a different file, run<br>
-`python3 main.py run file=<file_name>`
+```bash
+python3 main.py run file=<file_name>
+```
 <br>
 
 ## Config
