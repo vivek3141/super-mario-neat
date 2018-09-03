@@ -23,7 +23,6 @@ In ./Files, you can find the backup for generation 2284, and the backup for gene
 which is where I stopped training. <br />
 <br>
 You can continue training by running <br>
-<br>
 ```bash
 python3 main.py cont_train gen=<num_generations> file=<file>
 ```
