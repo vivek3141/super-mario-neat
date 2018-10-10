@@ -26,6 +26,7 @@ class Train:
 
     def _fitness_func_no_parallel(self, genomes, config):
         env = gym.make('ppaquette/SuperMarioBros-'+self.level+'-Tiles-v0')
+        env.action_space
         idx, genomes = zip(*genomes)
         for genome in genomes:
             try:
