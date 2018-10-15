@@ -131,7 +131,7 @@ class Train:
         visualize.plot_stats(stats, ylog=False, view=True)
         visualize.plot_species(stats, view=True)
 
-    def main(self, config_file='configk'):
+    def main(self, config_file='config'):
         local_dir = os.path.dirname(__file__)
         config_path = os.path.join(local_dir, config_file)
         self._run(config_path, self.generations)
