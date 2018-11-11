@@ -24,7 +24,7 @@ which is where I stopped training. <br />
 <br>
 You can continue training by running <br>
 ```bash
-python3 main.py cont_train gen=<num_generations> file=<file>
+python3 main.py cont_train --gen <num_generations> --file <file>
 ```
 <br>
 
@@ -41,22 +41,22 @@ python3 run.py
 ```
 If you want to run a different file, run<br>
 ```bash
-python3 main.py run file=<file_name>
+python3 main.py run --file <file_name>
 ```
 <br>
 
 ## Config
 For debugging values, you can change any of the values in the config file. Note that you have to train from the 1st generation for some to take effect.
 <br>
-To use a different config file when training, specify `config=<config file>` when running `main.py`.
+To use a different config file when training, specify `--config <config file>` when running `main.py`.
 <br>
 ## Multiprocessing
 This program uses the build in python module multiprocessing, which is used for parallel computing. You can adjust the amount of genomes
-to run at once by specifying `paralell=<num_of_genomes>` when running `main.py`.
+to run at once by specifying `--paralell <num_of_genomes>` when running `main.py`.
 <br>
 ## Levels
-The default level is World 1, Level 1. This can be changed by specifying `level=<level>` when running `main.py`. For example, <br>
-`python3 main.py train gen=100, level=1-1` will use 1-1.
+The default level is World 1, Level 1. This can be changed by specifying `--level <level>` when running `main.py`. For example, <br>
+`python3 main.py train --gen 100 --level "1-1"` will use 1-1.
 <br>
 ## Result
 The `finisher.pkl` file is trained to complete 1-1. It can complete it around 50% of the time. The `run.py` file keeps running the

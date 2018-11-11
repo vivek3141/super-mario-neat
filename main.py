@@ -6,13 +6,13 @@ import cont_train as ct
 parser = argparse.ArgumentParser(description='Run the program')
 parser.add_argument('mode', metavar='mode', type=str,
                     help="Specify 'train' or 'run' to run or train the model. To continue training, specify 'cont_train")
-parser.add_argument('gen', metavar='generations', type=int, help='Number of Generations to run for', nargs='?')
-parser.add_argument('file', metavar='file_name', type=str, help='File name to continue training or to run the winner',
+parser.add_argument('--gen', metavar='generations', type=int, help='Number of Generations to run for', nargs='?')
+parser.add_argument('--file', metavar='file_name', type=str, help='File name to continue training or to run the winner',
                     nargs='?')
-parser.add_argument('config', metavar='config', type=str, help='Configuration File', default='config', nargs='?')
-parser.add_argument('parallel', metavar='parallel', type=int,
+parser.add_argument('--config', metavar='config', type=str, help='Configuration File', default='config', nargs='?')
+parser.add_argument('--parallel', metavar='parallel', type=int,
                     help='Number of genomes to run at once', nargs='?', default=2)
-parser.add_argument('level', metavar='level', type=str, help='Which level to run, Eg. 1-1', default='1-1', nargs='?')
+parser.add_argument('--level', metavar='level', type=str, help='Which level to run, Eg. 1-1', default='1-1', nargs='?')
 
 args = parser.parse_args()
 
