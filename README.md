@@ -63,7 +63,7 @@ The `finisher.pkl` file is trained to complete 1-1. It can complete it around 50
 simulation until it completes the level. `Ctrl + C` will stop it.
 <br>
 <br>
-<img src="https://github.com/vivek3141/super-mario-neat/blob/master/Documentation/world1-1.gif">
+<img src="https://github.com/vivek3141/super-mario-neat/raw/master/Documentation/world1-1.gif">
 <br>
 ## Additional Information
 The [Wiki](https://github.com/vivek3141/super-mario-neat/wiki) contains more information regarding the specifics of implementing certain parts.
