@@ -52,7 +52,7 @@ To use a different config file when training, specify `--config <config file>` w
 <br>
 ## Multiprocessing
 This program uses the build in python module multiprocessing, which is used for parallel computing. You can adjust the amount of genomes
-to run at once by specifying `--paralell <num_of_genomes>` when running `main.py`.
+to run at once by specifying `--parallel <num_of_genomes>` when running `main.py`.
 <br>
 ## Levels
 The default level is World 1, Level 1. This can be changed by specifying `--level <level>` when running `main.py`. For example, <br>
