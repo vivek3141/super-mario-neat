@@ -65,12 +65,8 @@ simulation until it completes the level. `Ctrl + C` will stop it.
 <br>
 <img src="https://github.com/vivek3141/super-mario-neat/raw/master/Documentation/world1-1.gif">
 <br>
-## Dockerfile and Makefile
-Both dockerfiles and makefiles are included for easy installation.<br>
-To install using docker run
-```bash
-sudo docker build .
-```
+## Makefile
+A Makefile is included for easy installation.<br>
 To install using make run
 ```bash
 sudo make
