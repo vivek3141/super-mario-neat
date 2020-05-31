@@ -2,4 +2,4 @@ ppaquette-gym-super-mario
 neat-python
 numpy
 matplotlib
-graphvi
+graphviz
