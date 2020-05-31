@@ -1,19 +1,19 @@
 # Super Mario NEAT
 This program uses the NEAT algorithm to evolve a 
 Neural Network to play the original Super Mario Bros.
-For an in-depth explanation, watch [this video](https://www.youtube.com/watch?v=hNDkjy2rXG4) 
 <br>
 
 
 ## Requirements
 You can install the requirements by running <br >
 ```bash 
-sudo requirements.sh
+sudo apt install fceux
+python3 -m pip install -r requirements.txt
 ```
 
 Or if on windows, run
 ```bash
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 * Make sure you have FCEUX downloaded and added to PATH
 
@@ -63,13 +63,8 @@ The `finisher.pkl` file is trained to complete 1-1. It can complete it around 50
 simulation until it completes the level. `Ctrl + C` will stop it.
 <br>
 <br>
-<img src="https://github.com/vivek3141/super-mario-neat/raw/master/Documentation/world1-1.gif">
+<img src="https://github.com/vivek3141/super-mario-neat/raw/master/img/world1-1.gif">
 <br>
-## Makefile
-A Makefile is included for easy installation.<br>
-To install using make run
-```bash
-sudo make
-```
+
 ## Additional Information
 The [Wiki](https://github.com/vivek3141/super-mario-neat/wiki) contains more information regarding the specifics of implementing certain parts.
